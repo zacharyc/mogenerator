@@ -7,40 +7,18 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "DDCommandLineInterface.h"
+#import "JRLog.h"
 
-#import "MiscMergeTemplate.h"
+/*#import "MiscMergeTemplate.h"
 #import "MiscMergeCommandBlock.h"
 #import "MiscMergeEngine.h"
 #import "FoundationAdditions.h"
 #import "nsenumerate.h"
-#import "NSString+MiscAdditions.h"
-#import "DDCommandLineInterface.h"
+#import "NSString+MiscAdditions.h"*/
 
-@interface NSManagedObjectModel (entitiesWithACustomSubclassVerbose)
-- (NSArray*)entitiesWithACustomSubclassVerbose:(BOOL)verbose_;
-@end
-
-
-@interface NSEntityDescription (customBaseClass)
-- (BOOL)hasCustomSuperentity;
-- (NSString*)customSuperentity;
-- (void)_processPredicate:(NSPredicate*)predicate_ bindings:(NSMutableArray*)bindings_;
-- (NSArray*)prettyFetchRequests;
-@end
-
-@interface NSAttributeDescription (scalarAttributeType)
-- (BOOL)hasScalarAttributeType;
-- (NSString*)scalarAttributeType;
-- (BOOL)hasDefinedAttributeType;
-- (NSString*)objectAttributeType;
-@end
-
-@interface NSString (camelCaseString)
-- (NSString*)camelCaseString;
-@end
-
-@interface MOGeneratorApp : NSObject <DDCliApplicationDelegate> {
-	NSString				*tempMOMPath;
+@interface MOGeneratorApp : JRLogDefaultFormatter<DDCliApplicationDelegate> {
+	// Auto-populated arguments:
 	NSManagedObjectModel	*model;
 	NSString				*baseClass;
 	NSString				*includem;
@@ -49,11 +27,15 @@
 	NSString				*machineDir;
 	NSString				*humanDir;
 	NSString				*templateGroup;
-	BOOL					_help;
-	BOOL					_version;
-	BOOL					_listSourceFiles;
-    BOOL					_orphaned;
+	BOOL					help;
+	BOOL					version;
+	BOOL					listSourceFiles;
+    BOOL					orphaned;
+	
+	// 
+	NSString				*tempMOMPath;
 }
 
-- (NSString*)appSupportFileNamed:(NSString*)fileName_;
+- (NSString*)baseClass;
+
 @end

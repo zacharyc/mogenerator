@@ -11,8 +11,15 @@
 		55200E970C49FEEA00018A42 /* DDCliUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 55200E920C49FEEA00018A42 /* DDCliUtil.m */; };
 		55200E980C49FEEA00018A42 /* DDGetoptLongParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 55200E950C49FEEA00018A42 /* DDGetoptLongParser.m */; };
 		55200F9D0C4A2CA800018A42 /* DDCliParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 55200F9C0C4A2CA800018A42 /* DDCliParseException.m */; };
+		79203AD6110262B60069E705 /* NSXReturnThrowError.m in Sources */ = {isa = PBXBuildFile; fileRef = 79203AD5110262B60069E705 /* NSXReturnThrowError.m */; };
 		7931E67810FE982500175784 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7931E67710FE982500175784 /* libicucore.dylib */; };
 		7931E67B10FE984F00175784 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E67A10FE984F00175784 /* RegexKitLite.m */; };
+		7931E7E910FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E7E810FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.m */; };
+		7931E7EE10FFE07100175784 /* JRLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E7ED10FFE07100175784 /* JRLog.m */; };
+		7931E7F410FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E7F310FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.m */; };
+		7931E7FF10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E7FE10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.m */; };
+		7931E80210FFE3EA00175784 /* NSString+camelCaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E80110FFE3EA00175784 /* NSString+camelCaseString.m */; };
+		7931E80510FFE54F00175784 /* MOGenModelProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E80410FFE54F00175784 /* MOGenModelProcessor.m */; };
 		79D2BF3F0ACFB25B00F3F141 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D2BF3E0ACFB25B00F3F141 /* CoreData.framework */; };
 		79D2BFA20ACFB51A00F3F141 /* _MiscMergeBreakCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2BF530ACFB51A00F3F141 /* _MiscMergeBreakCommand.m */; };
 		79D2BFA40ACFB51A00F3F141 /* _MiscMergeCallCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2BF550ACFB51A00F3F141 /* _MiscMergeCallCommand.m */; };
@@ -71,9 +78,23 @@
 		55200E950C49FEEA00018A42 /* DDGetoptLongParser.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DDGetoptLongParser.m; sourceTree = "<group>"; };
 		55200F9B0C4A2CA800018A42 /* DDCliParseException.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DDCliParseException.h; sourceTree = "<group>"; };
 		55200F9C0C4A2CA800018A42 /* DDCliParseException.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DDCliParseException.m; sourceTree = "<group>"; };
+		79203AD4110262B60069E705 /* NSXReturnThrowError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSXReturnThrowError.h; path = NSXReturnThrowError/NSXReturnThrowError.h; sourceTree = "<group>"; };
+		79203AD5110262B60069E705 /* NSXReturnThrowError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSXReturnThrowError.m; path = NSXReturnThrowError/NSXReturnThrowError.m; sourceTree = "<group>"; };
 		7931E67710FE982500175784 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		7931E67910FE984F00175784 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		7931E67A10FE984F00175784 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		7931E7E710FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+mogeneratorExtensions.h"; sourceTree = "<group>"; };
+		7931E7E810FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+mogeneratorExtensions.m"; sourceTree = "<group>"; };
+		7931E7EC10FFE07100175784 /* JRLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRLog.h; sourceTree = "<group>"; };
+		7931E7ED10FFE07100175784 /* JRLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRLog.m; sourceTree = "<group>"; };
+		7931E7F210FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+mogeneratorExtensions.h"; sourceTree = "<group>"; };
+		7931E7F310FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+mogeneratorExtensions.m"; sourceTree = "<group>"; };
+		7931E7FD10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+mogeneratorExtensions.h"; sourceTree = "<group>"; };
+		7931E7FE10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributeDescription+mogeneratorExtensions.m"; sourceTree = "<group>"; };
+		7931E80010FFE3EA00175784 /* NSString+camelCaseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+camelCaseString.h"; sourceTree = "<group>"; };
+		7931E80110FFE3EA00175784 /* NSString+camelCaseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+camelCaseString.m"; sourceTree = "<group>"; };
+		7931E80310FFE54F00175784 /* MOGenModelProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOGenModelProcessor.h; sourceTree = "<group>"; };
+		7931E80410FFE54F00175784 /* MOGenModelProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOGenModelProcessor.m; sourceTree = "<group>"; };
 		79A586510E48E8B400474C35 /* mogenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mogenerator.h; sourceTree = "<group>"; usesTabs = 1; };
 		79D2BF3E0ACFB25B00F3F141 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		79D2BF520ACFB51A00F3F141 /* _MiscMergeBreakCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = _MiscMergeBreakCommand.h; path = ../MiscMerge/_MiscMergeBreakCommand.h; sourceTree = "<group>"; };
@@ -181,6 +202,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				79D2BF510ACFB51000F3F141 /* MiscMerge */,
 				55200E8E0C49FEEA00018A42 /* ddcli */,
+				7931E7EB10FFE07100175784 /* JRLog */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
@@ -197,7 +219,19 @@
 				79D2C0580ACFBCB500F3F141 /* FoundationAdditions.m */,
 				7931E67910FE984F00175784 /* RegexKitLite.h */,
 				7931E67A10FE984F00175784 /* RegexKitLite.m */,
+				79203AD4110262B60069E705 /* NSXReturnThrowError.h */,
+				79203AD5110262B60069E705 /* NSXReturnThrowError.m */,
 				32A70AAB03705E1F00C91783 /* mogenerator_Prefix.pch */,
+				7931E7E710FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.h */,
+				7931E7E810FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.m */,
+				7931E7F210FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.h */,
+				7931E7F310FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.m */,
+				7931E7FD10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.h */,
+				7931E7FE10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.m */,
+				7931E80010FFE3EA00175784 /* NSString+camelCaseString.h */,
+				7931E80110FFE3EA00175784 /* NSString+camelCaseString.m */,
+				7931E80310FFE54F00175784 /* MOGenModelProcessor.h */,
+				7931E80410FFE54F00175784 /* MOGenModelProcessor.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -234,6 +268,15 @@
 				55200E950C49FEEA00018A42 /* DDGetoptLongParser.m */,
 			);
 			path = ddcli;
+			sourceTree = "<group>";
+		};
+		7931E7EB10FFE07100175784 /* JRLog */ = {
+			isa = PBXGroup;
+			children = (
+				7931E7EC10FFE07100175784 /* JRLog.h */,
+				7931E7ED10FFE07100175784 /* JRLog.m */,
+			);
+			path = JRLog;
 			sourceTree = "<group>";
 		};
 		79D2BF510ACFB51000F3F141 /* MiscMerge */ = {
@@ -410,6 +453,13 @@
 				55200E980C49FEEA00018A42 /* DDGetoptLongParser.m in Sources */,
 				55200F9D0C4A2CA800018A42 /* DDCliParseException.m in Sources */,
 				7931E67B10FE984F00175784 /* RegexKitLite.m in Sources */,
+				7931E7E910FFDEE000175784 /* NSManagedObjectModel+mogeneratorExtensions.m in Sources */,
+				7931E7EE10FFE07100175784 /* JRLog.m in Sources */,
+				7931E7F410FFE13C00175784 /* NSEntityDescription+mogeneratorExtensions.m in Sources */,
+				7931E7FF10FFE34200175784 /* NSAttributeDescription+mogeneratorExtensions.m in Sources */,
+				7931E80210FFE3EA00175784 /* NSString+camelCaseString.m in Sources */,
+				7931E80510FFE54F00175784 /* MOGenModelProcessor.m in Sources */,
+				79203AD6110262B60069E705 /* NSXReturnThrowError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +504,7 @@
 		1DEB927908733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -467,7 +517,7 @@
 		1DEB927A08733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
