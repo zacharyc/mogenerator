@@ -178,6 +178,21 @@ static NSInteger sortByName(id obj1, id obj2, void *context)
     return [firstLetterString stringByAppendingString:restOfString];
 }
 
+- (NSString *)initialLowerString
+{
+    NSRange  firstLetterRange;
+    NSString *firstLetterString;
+    NSString *restOfString;
+
+    if ([self length] == 0) return self;
+
+    firstLetterRange  = [self rangeOfComposedCharacterSequenceAtIndex:0];
+    firstLetterString = [[self substringWithRange:firstLetterRange] lowercaseString];
+    restOfString      = [self substringFromIndex:NSMaxRange(firstLetterRange)];
+
+    return [firstLetterString stringByAppendingString:restOfString];
+}
+
 - (NSString *)beautifyString
 {
     NSString *newString;

@@ -29,6 +29,7 @@ extern void Printf(NSString *format, ...);
 @interface NSString (FoundationAdditions)
 
 - (NSString *)initialCapitalString;
+- (NSString *)initialLowerString;
 - (NSString *)beautifyString;
 
 @end
